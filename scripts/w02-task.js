@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = "Dillon O'Brien";
 var currentYear = new Date().getFullYear();
-var profilePicture = "images/me.png";
+var profilePicture = "images/me.jpg";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById("name");
