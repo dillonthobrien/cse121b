@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 document.getElementById('submitBtn').addEventListener('click', getWeather);
 
 async function getWeather() {
     const location = document.getElementById('locationInput').value;
-    const apiKey = 'api';
+    const apiKey = process.env.OPENWEATHERMAP_API_KEY;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
     try {
